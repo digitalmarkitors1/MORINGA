@@ -429,6 +429,27 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+
+            {/* Sixth cell — balances the 5-service grid with a real consultation-room
+                photo and a gentle route to pricing for anyone still deciding. */}
+            <Link href="/package.php" className="group">
+              <div className="relative aspect-[4/3] overflow-hidden photo-frame mb-5">
+                <Image
+                  src={REAL.clinicConsultation}
+                  alt="Consultation room at Go Moringa Diet Clinic, Sector 49 Gurugram"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ filter: "saturate(0.9)" }}
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </div>
+              <div className="text-eyebrow text-clay mb-2">Not sure which?</div>
+              <h3 className="font-display text-2xl font-medium text-ink group-hover:text-clay transition leading-tight">See packages &amp; pricing</h3>
+              <p className="mt-2 text-sm text-warm-700 leading-relaxed line-clamp-3">A free half-hour, and we&rsquo;ll recommend the programme that fits your body and your goal.</p>
+              <div className="mt-3 text-sm text-ink/70 group-hover:text-clay transition flex items-center gap-2">
+                View packages <span aria-hidden="true">→</span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
