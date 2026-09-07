@@ -656,13 +656,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Photography credits — honest mix of clinic + Unsplash */}
-      <div className="bg-ink-deep text-paper/40 py-4 px-6 text-center text-[10px] uppercase tracking-[0.18em] font-mono leading-relaxed">
-        Photography · Interiors &amp; portraits by Go Moringa · Sector 49, Gurugram · 2026
-        <span className="opacity-50 mx-2">·</span>
-        Botanical &amp; food: {PHOTOS.indianThali.credit.photographer}, {PHOTOS.moringaLeaves.credit.photographer}, {PHOTOS.freshGreens.credit.photographer} &amp; others via Unsplash
-      </div>
-
       <Footer />
     </>
   );
