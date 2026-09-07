@@ -22,28 +22,28 @@ import { PERSON, whatsappUrl } from "@/lib/site";
 
 const PROMISES = [
   {
-    lead: "You hear from me every day — not once a week",
-    body: "Send me a photo of your meals and your weight daily. I read every one and adjust your plan as we go. Real follow-up is daily, not weekly.",
+    lead: "Daily follow-up, not weekly",
+    body: "Share a photo of your meals and your weight each day. I review every one and adjust your plan as we go.",
   },
   {
-    lead: "You reach me — never an employee",
-    body: "I pick up my own phone. My team never sits between you and me. Every plan, every reply, every call is mine.",
+    lead: "You reach me, never an assistant",
+    body: "Every plan, every reply, every call is mine. No one sits between you and me.",
   },
   {
-    lead: "I don't miss your call",
-    body: "It simply can't happen that your call goes unanswered. Whenever you need me, you get me — not a receptionist.",
+    lead: "I answer when you call",
+    body: "Reach me directly whenever you need to — never a receptionist or a queue.",
   },
   {
-    lead: "I tell you what to order when you eat out",
-    body: "Travelling, a wedding, a restaurant? Message me and I'll tell you exactly what to choose. Your plan works in real life, not only at home.",
+    lead: "Guidance for eating out",
+    body: "Travelling, a wedding or a restaurant — message me and I'll tell you what to order. Your plan holds up in real life, not only at home.",
   },
   {
-    lead: "Built so you keep the results",
-    body: "Losing weight with a professional is the easy part. I coach you daily on how to maintain — so you don't go blank and regain it once the plan ends.",
+    lead: "Built to last beyond the plan",
+    body: "Losing the weight is the easier part. I coach you through maintenance so the results hold after the plan ends.",
   },
   {
     lead: "A free half-hour before you commit",
-    body: "I'll spend about thirty minutes explaining everything and answering every question — so you begin with a clear mind, no confusion, and not a rupee spent.",
+    body: "We'll take about thirty minutes on your goals and questions, so you begin with clarity and at no cost.",
   },
 ];
 
