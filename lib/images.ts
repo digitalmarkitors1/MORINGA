@@ -108,14 +108,19 @@ export const PHOTOS = {
     },
   },
   freshGreens: {
-    id: "1741515042603-70545daeb0c4",
-    url: u("1741515042603-70545daeb0c4"),
-    alt: "Fresh leafy greens and lettuce at a market",
-    caption: "Market morning",
+    // Swapped 2026-09-07: the previous photo was a Western grocery store with
+    // English shelf signage and dollar prices ("ROMAINE LETTUCE $2") — clearly
+    // foreign and off-brand for a Gurgaon diet clinic. Replaced with a clean
+    // fresh-vegetable spread (broccoli, cucumber, capsicum, napa cabbage, mooli)
+    // — India-appropriate, no signage, and a stronger weight-loss / heart signal.
+    id: "1688570835091-f64a77cc036b",
+    url: u("1688570835091-f64a77cc036b"),
+    alt: "Assortment of fresh vegetables — broccoli, cucumbers, capsicum, cabbage and white radish",
+    caption: "Fresh vegetables · the everyday plate",
     credit: {
-      photographer: "Zoshua Colah",
-      username: "zoshuacolah",
-      sourceUrl: "https://unsplash.com/photos/sdDA-pMzW10",
+      photographer: "set.sj",
+      username: "setsj",
+      sourceUrl: "https://unsplash.com/photos/t_XkI96bzA0",
     },
   },
 } as const satisfies Record<string, CuratedImage>;
