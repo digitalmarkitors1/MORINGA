@@ -94,6 +94,22 @@ export const PHOTOS = {
       sourceUrl: "https://unsplash.com/photos/indian-thali-is-served-with-side-dishes-gep3f7NQzZY",
     },
   },
+  // Added 2026-09-07 for the Pregnancy Diet card/hero — a wholesome fruit +
+  // yoghurt + wholegrain breakfast bowl (kiwi, berries, banana, chia, avocado,
+  // orange). Reads clearly as nourishing prenatal nutrition — folate, iron,
+  // vitamin C — and is far more appetising and on-brand than the botanical
+  // moringa-leaf photo it replaces.
+  wholesomeBowl: {
+    id: "1467453678174-768ec283a940",
+    url: u("1467453678174-768ec283a940"),
+    alt: "Wholesome breakfast bowl — kiwi, berries, banana and chia with avocado, orange and wholegrain bread",
+    caption: "Nourishing, everyday food",
+    credit: {
+      photographer: "Jannis Brandt",
+      username: "jannisbrandt",
+      sourceUrl: "https://unsplash.com/photos/8manzosDSGM",
+    },
+  },
 
   // Greens
   washedSpinach: {

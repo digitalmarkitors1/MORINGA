@@ -43,7 +43,7 @@ export const SERVICE_HEROES: Record<string, string> = {
   "weight-gain": PHOTOS.indianThali.url,        // full meal, abundance
   "figure-correction": PHOTOS.spicesOnSpoons.url, // turmeric glow / wellness
   "therapeutic-diet": PHOTOS.spiceBowls.url,    // medicinal spices, market
-  "pregnancy-diet": PHOTOS.moringaLeaves.url,   // botanical, gentle
+  "pregnancy-diet": PHOTOS.wholesomeBowl.url,   // nourishing prenatal food, appetising
 };
 
 // ─────────── Treatment hero image mapping (thematic rotation) ───────────
