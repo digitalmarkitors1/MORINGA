@@ -6,26 +6,13 @@ import { JsonLd } from "@/app/components/JsonLd";
 import { MoringaMark } from "@/app/components/MoringaMark";
 import { CONTACT, REVIEWS, SITE, whatsappUrl } from "@/lib/site";
 import { breadcrumbSchema, localBusinessSchema, personSchema } from "@/lib/schema";
+import { GoalForm } from "./GoalForm";
 
 export const metadata: Metadata = {
   title: "Book An Appointment | Go Moringa Diet Clinic Gurgaon",
   description: "Book a dietitian appointment with Dt. Priyatama Srivastava at Go Moringa. WhatsApp, call, or fill the form. Free 15-minute initial consultation.",
   alternates: { canonical: "/book-an-appointment.php" },
 };
-
-const PROGRAMS = [
-  "Healthy Weight Loss Program",
-  "Diabetes Reversal Program",
-  "PCOD / PCOS Management",
-  "Corporate Health Plans",
-  "Skin and Hair Program",
-  "7 Day Cleanse Diet Program",
-  "Online Trial Diet Plan",
-  "Weight Gain Program",
-  "Adolescent Obesity Weight Loss Program",
-  "Post-Pregnancy Weight Loss Program",
-  "Therapeutic Diets Program",
-];
 
 export default function BookPage() {
   const breadcrumb = breadcrumbSchema([
@@ -109,41 +96,7 @@ export default function BookPage() {
             <h2 className="font-display text-2xl md:text-3xl font-medium text-ink leading-tight">
               Tell us <em className="italic-clay">about your goal</em>.
             </h2>
-            <form action={`mailto:${CONTACT.email}`} method="POST" encType="text/plain" className="mt-6 space-y-3">
-              <div>
-                <label htmlFor="name" className="block text-eyebrow text-warm-500 mb-1">Your name</label>
-                <input id="name" type="text" name="name" placeholder="" required className="w-full p-3 bg-paper border border-[#d8c8a8]/70 focus:outline-none focus:border-clay text-ink font-display" />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-eyebrow text-warm-500 mb-1">Phone (WhatsApp preferred)</label>
-                <input id="phone" type="tel" name="phone" placeholder="" required className="w-full p-3 bg-paper border border-[#d8c8a8]/70 focus:outline-none focus:border-clay text-ink font-display" />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-eyebrow text-warm-500 mb-1">Email (optional)</label>
-                <input id="email" type="email" name="email" placeholder="" className="w-full p-3 bg-paper border border-[#d8c8a8]/70 focus:outline-none focus:border-clay text-ink font-display" />
-              </div>
-              <div>
-                <label htmlFor="program" className="block text-eyebrow text-warm-500 mb-1">Programme</label>
-                <select id="program" name="program" required className="w-full p-3 bg-paper border border-[#d8c8a8]/70 focus:outline-none focus:border-clay text-ink font-display">
-                  <option value="">Select...</option>
-                  {PROGRAMS.map((p) => (
-                    <option key={p} value={p}>{p}</option>
-                  ))}
-                  <option value="Not sure / discuss">Not sure — let&rsquo;s discuss</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-eyebrow text-warm-500 mb-1">A few words about your goal</label>
-                <textarea id="message" name="message" rows={3} className="w-full p-3 bg-paper border border-[#d8c8a8]/70 focus:outline-none focus:border-clay text-ink font-display" />
-              </div>
-              <button type="submit" className="group w-full p-3 bg-ink text-paper hover:bg-ink-deep transition flex items-center justify-center gap-3">
-                <span className="font-display font-medium">Send message</span>
-                <span className="text-clay" aria-hidden="true">→</span>
-              </button>
-              <p className="text-eyebrow text-warm-500 text-center">
-                For instant booking, WhatsApp is faster.
-              </p>
-            </form>
+            <GoalForm />
           </div>
         </div>
       </section>
