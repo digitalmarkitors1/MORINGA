@@ -383,9 +383,6 @@ export default function HomePage() {
                   Unitech Rodio Drive, D-117 &amp; 118, South City II. Walk in. Or video call from anywhere in India.
                 </p>
               </div>
-              <p className="mt-6 text-[10px] uppercase tracking-[0.18em] font-mono text-warm-500">
-                Photographed · 2026
-              </p>
             </div>
           </div>
         </div>
