@@ -21,9 +21,9 @@ import { whatsappUrl } from "@/lib/site";
 
 const STEPS = [
   {
-    title: "A free first call",
+    title: "A first call",
     body: "Fifteen minutes on WhatsApp. You describe the goal and the history; we say honestly whether a dietary plan is the right tool for it.",
-    aside: "Free · 15 min",
+    aside: "15 min",
   },
   {
     title: "The full assessment",

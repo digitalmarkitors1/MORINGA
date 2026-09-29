@@ -86,7 +86,7 @@ export const LANDING_PAGES: Record<string, LandingPage> = {
       },
       {
         heading: "Languages and payment",
-        body: "Consultations are conducted in English and Hindi. Payment is online and the process is explained fully before you commit — there is no obligation after the first conversation, which is free. You will be told plainly whether dietary intervention is appropriate for your goal.",
+        body: "Consultations are conducted in English and Hindi. Payment is online and the process is explained fully before you commit — there is no obligation after the first conversation. You will be told plainly whether dietary intervention is appropriate for your goal.",
       },
     ],
     highlights: [
@@ -94,7 +94,7 @@ export const LANDING_PAGES: Record<string, LandingPage> = {
       "Personalised Indian-meal plans, not generic PDFs",
       "Daily follow-up + open WhatsApp line",
       "Serves all of India and NRI clients worldwide",
-      "First 15-minute conversation is free",
+      "A 15-minute introductory conversation to start",
     ],
     process: [
       { title: "Book a slot", body: "Message on WhatsApp or call the clinic. Pick a consultation time that suits your schedule and timezone." },
@@ -106,7 +106,7 @@ export const LANDING_PAGES: Record<string, LandingPage> = {
       { q: "Is an online diet consultation as effective as visiting the clinic?", a: "Yes. The assessment, the written plan and the daily check-in are identical to an in-clinic engagement. Lab reports are shared as photographs and the consultation happens over video or phone. Thousands of online clients across India and abroad have achieved the same results as in-clinic clients." },
       { q: "How do I share my blood reports?", a: "Simply photograph them and send them on WhatsApp before your assessment call. Dt. Priyatama reviews HbA1c, lipid profile, thyroid panel, vitamin levels and other relevant markers as part of building your plan." },
       { q: "Can NRIs consult from outside India?", a: "Yes. Clients in the Gulf, UK, US, Australia, Singapore and elsewhere consult regularly. Plans are built around ingredients available where you live, while keeping the Indian meal structure you are used to." },
-      { q: "What does the first conversation cost?", a: "The first 15-minute conversation is free. It is used to understand your goal and tell you honestly whether a dietary programme is the right fit. Programme pricing is shared transparently after that." },
+      { q: "What does the first conversation cost?", a: "The first 15-minute conversation is used to understand your goal and tell you honestly whether a dietary programme is the right fit. Programme pricing is shared transparently after that." },
       { q: "Which conditions can be managed through online consultation?", a: "Weight loss, weight gain, PCOS/PCOD, diabetes, thyroid, cholesterol, blood pressure, fatty liver, pregnancy nutrition and most therapeutic diets. If a condition needs in-person assessment, you will be told." },
       { q: "What language are consultations conducted in?", a: "English and Hindi. The written plan is provided in clear, simple language with practical Indian-meal guidance." },
     ],

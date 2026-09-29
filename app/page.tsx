@@ -11,6 +11,7 @@ import { Marquee } from "./components/Marquee";
 import { HowItWorks } from "./components/HowItWorks";
 import { Dossier } from "./components/Dossier";
 import { PersonalPromise } from "./components/PersonalPromise";
+import { ContactForm } from "./components/ContactForm";
 import { REAL } from "@/lib/photo-strategy";
 import { CONTACT, PERSON, REVIEWS, SITE, whatsappUrl } from "@/lib/site";
 import { DEFAULT_OG_IMAGE } from "@/lib/photo-strategy";
@@ -442,7 +443,7 @@ export default function HomePage() {
               </div>
               <div className="text-eyebrow text-clay mb-2">Not sure which?</div>
               <h3 className="font-display text-2xl font-medium text-ink group-hover:text-clay transition leading-tight">See packages &amp; pricing</h3>
-              <p className="mt-2 text-sm text-warm-700 leading-relaxed line-clamp-3">A free half-hour, and we&rsquo;ll recommend the programme that fits your body and your goal.</p>
+              <p className="mt-2 text-sm text-warm-700 leading-relaxed line-clamp-3">A short first conversation, and we&rsquo;ll recommend the programme that fits your body and your goal.</p>
               <div className="mt-3 text-sm text-ink/70 group-hover:text-clay transition flex items-center gap-2">
                 View packages <span aria-hidden="true">→</span>
               </div>
@@ -655,10 +656,10 @@ export default function HomePage() {
           <MoringaMark className="size-12 text-clay mx-auto mb-6" />
           <div className="text-eyebrow text-clay mb-5">Begin</div>
           <h2 className="font-display font-medium leading-[1.05] tracking-[-0.02em]" style={{ fontSize: "clamp(2rem, 5vw, 3.75rem)" }}>
-            The first conversation <em className="italic" style={{ color: "#C9A961" }}>is free.</em>
+            The first step is a <em className="italic" style={{ color: "#C9A961" }}>conversation.</em>
           </h2>
           <p className="mt-6 text-base md:text-lg text-paper/85 leading-relaxed max-w-2xl mx-auto">
-            Fifteen minutes on WhatsApp to understand your goal — no commitment, no payment upfront. We&rsquo;ll tell you honestly whether dietary intervention is appropriate for what you&rsquo;re working on.
+            Fifteen minutes on WhatsApp to understand your goal — no commitment. We&rsquo;ll tell you honestly whether dietary intervention is appropriate for what you&rsquo;re working on.
           </p>
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-4 justify-center items-center">
             <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 text-base font-medium text-paper">
@@ -670,6 +671,30 @@ export default function HomePage() {
             <a href={`tel:${CONTACT.phoneTel}`} className="text-base font-medium text-paper/75 hover:text-paper transition">
               or call {CONTACT.phone}
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ═════════════════════════════════════════════════ CONTACT FORM */}
+      <section className="bg-paper py-14 md:py-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-14 items-start">
+          <div>
+            <div className="text-eyebrow text-clay mb-3 flex items-center gap-3">
+              <span className="block h-px w-10 bg-clay" />
+              Or leave your details
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-ink leading-tight">
+              Tell us <em className="italic-clay">about your goal</em>.
+            </h2>
+            <p className="mt-4 text-warm-700 leading-relaxed max-w-md">
+              Fill this in and it opens WhatsApp with your details ready to send. Dt. Priyatama replies personally during clinic hours.
+            </p>
+            <p className="mt-6 text-eyebrow text-warm-500">
+              {CONTACT.hours.days} · {CONTACT.hours.open}–{CONTACT.hours.close} · {CONTACT.phone}
+            </p>
+          </div>
+          <div className="bg-paper-dark border border-[#d8c8a8]/70 p-6 md:p-8">
+            <ContactForm source="home" />
           </div>
         </div>
       </section>

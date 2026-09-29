@@ -6,6 +6,7 @@ import { JsonLd } from "@/app/components/JsonLd";
 import { MoringaMark } from "@/app/components/MoringaMark";
 import { CONTACT, REVIEWS, SITE, SOCIAL, whatsappUrl } from "@/lib/site";
 import { breadcrumbSchema, localBusinessSchema, personSchema } from "@/lib/schema";
+import { ContactForm } from "@/app/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Go Moringa | Nutri Diet Clinic In Gurgaon",
@@ -47,7 +48,7 @@ export default function ContactPage() {
             Three ways to <em className="italic-clay">begin</em>.
           </h1>
           <p className="mt-6 text-lg text-warm-700 max-w-2xl mx-auto leading-relaxed">
-            Pick whichever fits you. The first conversation is free, 15 minutes, no commitment.
+            Pick whichever fits you. The first conversation is 15 minutes, no commitment.
           </p>
         </div>
       </section>
@@ -130,6 +131,27 @@ export default function ContactPage() {
                 <a href={SOCIAL.twitter} target="_blank" rel="noopener noreferrer" className="text-ink hover:text-clay transition">Twitter</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact form */}
+      <section className="bg-paper py-16 md:py-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-14 items-start">
+          <div>
+            <div className="text-eyebrow text-clay mb-3 flex items-center gap-3">
+              <span className="block h-px w-10 bg-clay" />
+              Or leave your details
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-ink leading-tight">
+              Tell us <em className="italic-clay">about your goal</em>.
+            </h2>
+            <p className="mt-4 text-warm-700 leading-relaxed max-w-md">
+              Fill this in and it opens WhatsApp with your details ready to send. Dt. Priyatama replies personally during clinic hours.
+            </p>
+          </div>
+          <div className="bg-paper-dark border border-[#d8c8a8]/70 p-6 md:p-8">
+            <ContactForm source="contact" />
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ import { GoalForm } from "./GoalForm";
 
 export const metadata: Metadata = {
   title: "Book An Appointment | Go Moringa Diet Clinic Gurgaon",
-  description: "Book a dietitian appointment with Dt. Priyatama Srivastava at Go Moringa. WhatsApp, call, or fill the form. Free 15-minute initial consultation.",
+  description: "Book a dietitian appointment with Dt. Priyatama Srivastava at Go Moringa. WhatsApp, call, or fill the form for a 15-minute initial consultation.",
   alternates: { canonical: "/book-an-appointment.php" },
 };
 
@@ -34,7 +34,7 @@ export default function BookPage() {
               <span className="mx-3 opacity-50">/</span>
               <span className="text-clay">Book Appointment</span>
             </nav>
-            <span className="hidden md:inline">First conversation · 15 minutes · free</span>
+            <span className="hidden md:inline">First conversation · 15 minutes</span>
           </div>
         </div>
 
@@ -45,10 +45,10 @@ export default function BookPage() {
             <span className="block h-px w-10 bg-clay" />
           </div>
           <h1 className="font-display tracking-[-0.02em] font-medium text-ink leading-[0.98] mx-auto max-w-4xl" style={{ fontSize: "clamp(2.4rem, 5vw, 4rem)" }}>
-            The first conversation <em className="italic-clay">is free</em>.
+            The first step is a <em className="italic-clay">conversation</em>.
           </h1>
           <p className="mt-6 text-lg text-warm-700 max-w-2xl mx-auto leading-relaxed">
-            Fifteen minutes to understand your goal. No commitment, no payment upfront. Pick the channel that suits you.
+            Fifteen minutes to understand your goal. No commitment. Pick the channel that suits you.
           </p>
         </div>
       </section>

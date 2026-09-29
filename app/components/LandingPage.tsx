@@ -372,10 +372,10 @@ export function LandingPage({ page }: { page: LandingPageData }) {
           <MoringaMark className="size-12 text-clay mx-auto mb-6" />
           <div className="text-eyebrow text-clay mb-4">Begin</div>
           <h2 className="font-display font-medium leading-[1.05] tracking-[-0.02em]" style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}>
-            The first conversation <em className="italic" style={{ color: "#C9A961" }}>is free.</em>
+            The first step is a <em className="italic" style={{ color: "#C9A961" }}>conversation.</em>
           </h2>
           <p className="mt-6 text-base text-paper/85 leading-relaxed max-w-2xl mx-auto">
-            Fifteen minutes on WhatsApp to discuss your goal. No commitment, no payment upfront — we tell you honestly whether a plan is the right fit.
+            Fifteen minutes on WhatsApp to discuss your goal. No commitment — we tell you honestly whether a plan is the right fit.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-x-8 sm:gap-y-4 justify-center sm:items-center">
             <a

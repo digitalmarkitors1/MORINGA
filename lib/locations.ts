@@ -192,7 +192,7 @@ export const LOCATIONS: Record<string, LocationData> = {
       { q: "Can I do the entire program online from Faridabad?", a: "Yes. Initial video assessment + customised diet plan + WhatsApp follow-ups. The vast majority of our Faridabad client base completes the entire program without ever visiting the clinic." },
       { q: "Will the diet plan account for shift work?", a: "Yes. Shift workers — especially in Faridabad's industrial zones — get specifically calibrated plans that account for circadian disruption, meal timing on night shifts, and rotation between schedules. This is a niche we handle regularly." },
       { q: "Who is the best dietitian for Faridabad residents?", a: "Dt. Priyatama Srivastava of Go Moringa — 20 years of experience, 10,000+ clients across NCR, 5.0★ on Practo. Online consultation works equally well for Faridabad clients as the in-person Sector 49 clinic." },
-      { q: "How do I book a consultation from Faridabad?", a: "WhatsApp +91-9910922899 or call to start. The first conversation is free — we'll discuss your goal, recommend the right package, and schedule the initial video consultation." },
+      { q: "How do I book a consultation from Faridabad?", a: "WhatsApp +91-9910922899 or call to start. The first conversation covers your goal, the right package, and scheduling the initial video consultation." },
     ],
   },
 
@@ -234,7 +234,7 @@ export const LOCATIONS: Record<string, LocationData> = {
       { q: "What is the difference between a nutritionist and a dietitian?", a: "In everyday use the terms overlap. What matters is clinical training and a track record managing real medical conditions. Dt. Priyatama Srivastava is a qualified, certified clinical practitioner with 20 years of experience across weight, PCOS, diabetes, thyroid and therapeutic diets — that clinical depth is what you should look for in either title." },
       { q: "Who is the best nutritionist in Gurgaon?", a: "Dt. Priyatama Srivastava of Go Moringa Nutri Diet Clinic, Sector 49 — rated 5.0 on Practo (279+ reviews) and 4.9 on Justdial (699+), with 20 years' experience and 10,000+ clients. The clinic is ISO 9001:2015 certified." },
       { q: "Does the nutritionist consult online?", a: "Yes. Consultations run both at the Sector 49 clinic and online by video call for clients across Gurgaon and beyond. The assessment, written plan and daily check-ins are identical either way." },
-      { q: "What does a nutrition consultation cover?", a: "A detailed assessment of your health history, lab reports, lifestyle and food habits, followed by a personalised Indian-meal plan, daily follow-ups and an open WhatsApp line. The first 15-minute conversation is free." },
+      { q: "What does a nutrition consultation cover?", a: "A detailed assessment of your health history, lab reports, lifestyle and food habits, followed by a personalised Indian-meal plan, daily follow-ups and an open WhatsApp line. It begins with a 15-minute introductory conversation." },
       { q: "Where is the clinic located?", a: "Unitech Rodio Drive, D-117 & 118, South City II, Sector 49, Gurugram 122018 — open Monday to Saturday, 10 AM to 7 PM." },
     ],
   },
@@ -274,7 +274,7 @@ export const LOCATIONS: Record<string, LocationData> = {
     faqs: [
       { q: "Where is the Go Moringa diet clinic in Gurgaon?", a: "Unitech Rodio Drive, D-117 & 118, South City II, Sector 49, Gurugram, Haryana 122018. Open Monday to Saturday, 10 AM to 7 PM. It is 10–15 minutes from DLF Phase 3, Sushant Lok and Sohna Road." },
       { q: "Is the diet clinic certified?", a: "Yes. Go Moringa Nutri Diet & Food Clinic holds an ISO 9001:2015 quality-management certification — an independently-audited credential covering the clinic's consultation and plan-delivery process." },
-      { q: "Can I visit the clinic for a walk-in consultation?", a: "Yes, though booking ahead on WhatsApp (+91-9910922899) is recommended so a slot is reserved. The first 15-minute conversation is free." },
+      { q: "Can I visit the clinic for a walk-in consultation?", a: "Yes, though booking ahead on WhatsApp (+91-9910922899) is recommended so a slot is reserved. It begins with a 15-minute introductory conversation." },
       { q: "Do I have to visit, or can the programme be done online?", a: "Either works. Many clients complete the entire programme online — video assessment, written plan, daily check-ins — without visiting. The clinical depth is the same as an in-clinic engagement." },
       { q: "What conditions does the clinic treat?", a: "Weight loss and gain, PCOS/PCOD, diabetes, thyroid, cholesterol, blood pressure, fatty liver, pregnancy nutrition, figure correction, and therapeutic diets for chronic conditions." },
     ],
@@ -318,7 +318,7 @@ export const LOCATIONS: Record<string, LocationData> = {
       { q: "Can DLF residents consult online instead of visiting?", a: "Yes. Many DLF clients run the entire programme online — video assessment, written plan, daily check-ins — and never need to drive in. The clinical depth is identical." },
       { q: "Who is the best dietitian for DLF Gurgaon residents?", a: "Dt. Priyatama Srivastava of Go Moringa, Sector 49 — 20 years' experience, 10,000+ clients, 5.0 on Practo. The clinic has worked with the DLF Phase demographic for two decades." },
       { q: "Do you handle pre-wedding diet plans for DLF clients?", a: "Yes — pre-wedding figure correction is one of the most-booked programmes among DLF Phase residents. Booking six to twelve months ahead gives the best results." },
-      { q: "How do I book a consultation?", a: "WhatsApp +91-9910922899 or call. The first 15-minute conversation is free — we'll discuss your goal and recommend the right programme." },
+      { q: "How do I book a consultation?", a: "WhatsApp +91-9910922899 or call. The first 15-minute conversation covers your goal and the right programme." },
     ],
   },
 
@@ -444,7 +444,7 @@ export const LOCATIONS: Record<string, LocationData> = {
       { q: "Does the practice cover all of Delhi NCR?", a: "Yes. The Sector 49 Gurgaon clinic serves clients from Gurgaon, Delhi, Noida, Greater Noida, Faridabad and Ghaziabad — in person and through online consultation that reaches every NCR pocket equally." },
       { q: "Can I consult online from anywhere in NCR?", a: "Yes. Online consultation — video assessment, written plan, daily check-ins — is identical in depth to an in-clinic visit and is how the majority of NCR clients outside Gurgaon are managed." },
       { q: "What conditions are managed for NCR clients?", a: "Weight loss and gain, PCOS/PCOD, diabetes, thyroid, cholesterol, blood pressure, fatty liver, pregnancy nutrition, figure correction and therapeutic diets for chronic conditions." },
-      { q: "How do I book from my NCR city?", a: "WhatsApp +91-9910922899 or call. The first 15-minute conversation is free, wherever in NCR you are — we discuss your goal and recommend the right programme." },
+      { q: "How do I book from my NCR city?", a: "WhatsApp +91-9910922899 or call. The first 15-minute conversation, wherever in NCR you are, covers your goal and the right programme." },
     ],
   },
 
@@ -485,7 +485,7 @@ export const LOCATIONS: Record<string, LocationData> = {
       { q: "Can I consult a top dietitian online from anywhere in India?", a: "Yes. Online consultation — video assessment, written plan, daily check-ins — is identical in clinical depth to an in-clinic visit. Clients in every Indian state, including tier-2 and tier-3 towns, are managed this way." },
       { q: "Will the diet plan suit my regional cuisine?", a: "Yes. Plans are built around your specific regional kitchen — Punjabi, Bengali, South Indian, Gujarati, Maharashtrian and others. Every regional cuisine has weight-loss-friendly and condition-friendly staples; the plan uses yours." },
       { q: "Can NRIs consult from outside India?", a: "Yes. NRIs across the Gulf, UK, US, Australia, Canada and Singapore consult regularly. Plans keep the Indian meal structure while adapting to ingredients available where you live." },
-      { q: "How do I book an online consultation?", a: "WhatsApp +91-9910922899 or call. The first 15-minute conversation is free — it is used to understand your goal and tell you honestly whether a dietary programme is the right fit." },
+      { q: "How do I book an online consultation?", a: "WhatsApp +91-9910922899 or call. The first 15-minute conversation is used to understand your goal and tell you honestly whether a dietary programme is the right fit." },
     ],
   },
 };

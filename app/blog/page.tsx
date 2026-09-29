@@ -150,7 +150,7 @@ export default function BlogIndex() {
             Articles are <em className="italic" style={{ color: "#C9A961" }}>general</em>.
           </h2>
           <p className="mt-6 text-base text-paper/85 leading-relaxed max-w-2xl mx-auto">
-            For a plan built around your specific body, goal and family kitchen, the first conversation is free.
+            For a plan built around your specific body, goal and family kitchen, start with a conversation.
           </p>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-4 justify-center items-center">
             <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 text-base font-medium text-paper">

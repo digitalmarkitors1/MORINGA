@@ -241,7 +241,7 @@ export function BlogPage({ blog, related }: Props) {
 
               {/* Inline CTA in the margin — light, doesn't compete with body */}
               <div className="border-t border-[#d8c8a8]/60 pt-5">
-                <p className="text-eyebrow text-warm-500 mb-2">Free first conversation</p>
+                <p className="text-eyebrow text-warm-500 mb-2">First conversation</p>
                 <p className="font-display text-base text-ink leading-snug">
                   15 minutes on WhatsApp. No commitment.
                 </p>

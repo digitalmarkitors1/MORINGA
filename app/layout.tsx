@@ -4,7 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { ANALYTICS, SITE } from "@/lib/site";
 import { FloatingCTA } from "@/app/components/FloatingCTA";
-import { ExitIntentPopup } from "@/app/components/ExitIntentPopup";
+import { ContactPopup } from "@/app/components/ContactPopup";
 import { cn } from "@/lib/utils";
 import { DEFAULT_OG_IMAGE } from "@/lib/photo-strategy";
 
@@ -117,7 +117,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans text-ink bg-paper pb-14 md:pb-0">
         {children}
         <FloatingCTA />
-        <ExitIntentPopup />
+        <ContactPopup />
       </body>
     </html>
   );

@@ -138,7 +138,7 @@ export default function FaqHubPage() {
             Ask {PERSON.name.replace("Dt. ", "Dt. ")} <em className="italic" style={{ color: "#C9A961" }}>directly.</em>
           </h2>
           <p className="mt-6 text-base md:text-lg text-paper/85 leading-relaxed max-w-2xl mx-auto">
-            The first conversation is free — fifteen minutes on WhatsApp to discuss whatever this page didn&rsquo;t answer.
+            The first conversation is fifteen minutes on WhatsApp to discuss whatever this page didn&rsquo;t answer.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-x-8 sm:gap-y-4 justify-center sm:items-center">
             <a

@@ -42,8 +42,8 @@ const PROMISES = [
     body: "Losing the weight is the easier part. I coach you through maintenance so the results hold after the plan ends.",
   },
   {
-    lead: "A free half-hour before you commit",
-    body: "We'll take about thirty minutes on your goals and questions, so you begin with clarity and at no cost.",
+    lead: "A first conversation before you commit",
+    body: "We'll take about thirty minutes on your goals and questions, so you begin with a clear picture and no pressure.",
   },
 ];
 
@@ -117,7 +117,7 @@ export function PersonalPromise() {
             className="group inline-flex items-center gap-3 text-base font-medium text-ink shrink-0"
           >
             <span className="relative pb-1 border-b-2 border-clay transition-all group-hover:border-b-[3px]">
-              Start with the free half-hour
+              Start the conversation
             </span>
             <span className="text-clay" aria-hidden="true">→</span>
           </a>

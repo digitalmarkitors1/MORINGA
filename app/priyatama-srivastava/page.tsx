@@ -206,7 +206,7 @@ export default function PriyatamaPage() {
           <MoringaMark className="size-12 text-clay mx-auto mb-6" />
           <div className="text-eyebrow text-clay mb-4">Begin with Priyatama</div>
           <h2 className="font-display font-medium leading-[1.05] tracking-[-0.02em]" style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}>
-            The first conversation <em className="italic" style={{ color: "#C9A961" }}>is free.</em>
+            The first step is a <em className="italic" style={{ color: "#C9A961" }}>conversation.</em>
           </h2>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-4 justify-center items-center">
             <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 text-base font-medium text-paper">

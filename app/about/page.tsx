@@ -203,7 +203,7 @@ export default function AboutPage() {
             Talk to us <em className="italic" style={{ color: "#C9A961" }}>first</em>.
           </h2>
           <p className="mt-6 text-base text-paper/85 leading-relaxed max-w-2xl mx-auto">
-            Fifteen minutes on WhatsApp to discuss your goal. No commitment, no payment upfront.
+            Fifteen minutes on WhatsApp to discuss your goal. No commitment.
           </p>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-4 justify-center items-center">
             <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 text-base font-medium text-paper">

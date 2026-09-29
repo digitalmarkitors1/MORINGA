@@ -52,7 +52,7 @@ export const REVIEWS = {
 
 export const SOCIAL = {
   facebook: "https://www.facebook.com/GoMoringa.In",
-  instagram: "https://www.instagram.com/dt_priyatamasrivastava/",
+  instagram: "https://www.instagram.com/dtpriyatamasrivastava/",
   twitter: "https://twitter.com/Go_Moringa",
   twitterHandle: "@Go_Moringa",
   youtube: "https://www.youtube.com/channel/UCmAPi8Kp36xI50E_kI7gVWg",
