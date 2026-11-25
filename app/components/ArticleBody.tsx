@@ -26,6 +26,9 @@ import path from "node:path";
 
 type ArticleBodyProps = {
   slug: string;
+  /** Body HTML for posts that live in the CMS. When omitted, the bundled
+      file in content/<folder>/<slug>.html is used. */
+  html?: string;
   folder?: "blog";
   /** When provided, a magazine-style photo break is inserted midway through
       the body — after the first `</h2>` if present, else after the second
@@ -71,16 +74,19 @@ function injectInlinePhoto(html: string, url: string, caption: string): string {
 
 export function ArticleBody({
   slug,
+  html: cmsHtml,
   folder = "blog",
   inlinePhotoUrl,
   inlinePhotoCaption,
 }: ArticleBodyProps) {
-  const fp = path.join(process.cwd(), "content", folder, `${slug}.html`);
-  let html = "";
-  try {
-    html = readFileSync(fp, "utf-8");
-  } catch {
-    html = "<p>Article content not found.</p>";
+  let html = cmsHtml ?? "";
+  if (cmsHtml === undefined) {
+    const fp = path.join(process.cwd(), "content", folder, `${slug}.html`);
+    try {
+      html = readFileSync(fp, "utf-8");
+    } catch {
+      html = "<p>Article content not found.</p>";
+    }
   }
 
   let safeHtml = sanitizeArticleHtml(html);

@@ -4,12 +4,12 @@ import { SERVICE_LIST } from "@/lib/services";
 import { LOCATION_LIST } from "@/lib/locations";
 import { TREATMENT_LIST } from "@/lib/treatments";
 import { RECIPE_LIST } from "@/lib/recipes";
-import { BLOGS } from "@/lib/blogs";
+import { getAllBlogs } from "@/lib/blogs";
 import { LANDING_PAGE_LIST } from "@/lib/landing-pages";
 
 const today = new Date();
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const url = (path: string) => `${SITE.url}${path}`;
 
   const staticPages = [
@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "yearly" as const,
   }));
 
-  const blogs = BLOGS.map((b) => ({
+  const blogs = (await getAllBlogs()).map((b) => ({
     url: url(b.phpPath),
     priority: 0.6,
     changeFrequency: "monthly" as const,

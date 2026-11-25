@@ -20,6 +20,21 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Content management
+
+Blog posts are managed in [Payload](https://payloadcms.com) at `/admin`.
+
+Setup:
+
+1. Copy `.env.example` to `.env.local` and fill in `DATABASE_URI` and `PAYLOAD_SECRET`.
+2. `npm run payload migrate` creates the CMS tables (kept in their own `payload` schema).
+3. `npm run import:blogs` copies the bundled articles from `content/blog` into the CMS. Safe to re-run.
+4. Open `/admin` and create the first editor account.
+
+Articles that have not been imported keep rendering from `content/blog`, so the public blog works even before step 3.
+
+After changing anything in `cms/collections`, run `npm run payload migrate:create` and commit the new migration. `npm run build` applies pending migrations automatically when `DATABASE_URI` is set.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

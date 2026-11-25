@@ -5,7 +5,7 @@ import { Header } from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
 import { JsonLd } from "@/app/components/JsonLd";
 import { MoringaMark } from "@/app/components/MoringaMark";
-import { BLOGS } from "@/lib/blogs";
+import { getAllBlogs } from "@/lib/blogs";
 import { CONTACT, PERSON, REVIEWS, SITE, whatsappUrl } from "@/lib/site";
 import { breadcrumbSchema, localBusinessSchema, personSchema } from "@/lib/schema";
 import { heroForBlog } from "@/lib/photo-strategy";
@@ -16,7 +16,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog.php" },
 };
 
-export default function BlogIndex() {
+export default async function BlogIndex() {
+  const blogs = await getAllBlogs();
   const breadcrumb = breadcrumbSchema([
     { name: "Home", url: SITE.url },
     { name: "Blogs", url: `${SITE.url}/blog.php` },
@@ -24,7 +25,7 @@ export default function BlogIndex() {
   const schemas = [localBusinessSchema(), personSchema(), breadcrumb];
 
   // Sort by word count desc to surface the longest/richest articles first
-  const sortedBlogs = [...BLOGS].sort((a, b) => b.wordCount - a.wordCount);
+  const sortedBlogs = [...blogs].sort((a, b) => b.wordCount - a.wordCount);
   const [featured, ...rest] = sortedBlogs;
 
   return (
@@ -40,7 +41,7 @@ export default function BlogIndex() {
               <span className="mx-3 opacity-50">/</span>
               <span className="text-clay">Blogs</span>
             </nav>
-            <span className="hidden md:inline">{BLOGS.length} articles · clinical nutrition writing</span>
+            <span className="hidden md:inline">{blogs.length} articles · clinical nutrition writing</span>
           </div>
         </div>
 
@@ -70,7 +71,7 @@ export default function BlogIndex() {
               <figure className="md:col-span-6 md:order-2">
                 <div className="relative aspect-[4/3] overflow-hidden photo-frame">
                   <Image
-                    src={heroForBlog(featured.slug)}
+                    src={featured.heroImage || heroForBlog(featured.slug)}
                     alt={featured.h1 || featured.title}
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
@@ -116,7 +117,7 @@ export default function BlogIndex() {
               <Link key={b.slug} href={b.phpPath} className="group">
                 <div className="relative aspect-[4/3] overflow-hidden photo-frame mb-5">
                   <Image
-                    src={heroForBlog(b.slug)}
+                    src={b.heroImage || heroForBlog(b.slug)}
                     alt={b.h1 || b.title}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
