@@ -9,7 +9,7 @@ import { ReadingProgress } from "./ReadingProgress";
 import { RelatedReading } from "./RelatedReading";
 import { ArticleBody } from "./ArticleBody";
 import { AuthorBioBlock, LastUpdated, MedicalDisclaimer } from "./aeo";
-import { BLOGS, type BlogMeta } from "@/lib/blogs";
+import type { BlogMeta } from "@/lib/blogs";
 import { CONTACT, PERSON, REVIEWS, SITE, whatsappUrl } from "@/lib/site";
 import {
   breadcrumbSchema,
@@ -35,24 +35,24 @@ function articleSchema(b: BlogMeta, heroImage: string) {
   };
 }
 
-type Props = { blog: BlogMeta; related: BlogMeta[] };
+type Props = { blog: BlogMeta; related: BlogMeta[]; all: BlogMeta[] };
 
-export function BlogPage({ blog, related }: Props) {
+export function BlogPage({ blog, related, all }: Props) {
   // Per-slug hero (real photo for author-focused posts, curated Unsplash by
   // topic otherwise). Falls back to the default OG image for anything the
   // mapper somehow couldn't classify.
-  const heroImage = heroForBlog(blog.slug) || DEFAULT_OG_IMAGE;
+  const heroImage = blog.heroImage || heroForBlog(blog.slug) || DEFAULT_OG_IMAGE;
   const inlinePhoto = inlinePhotoForBlog(blog.slug);
 
-  // Issue numbering — derived from the blog index. Order of BLOGS is the
+  // Issue numbering — derived from the blog index. Order of `all` is the
   // canonical chronological-ish ordering; "Vol. 20" mirrors PERSON.yearsExperience.
-  const issueIndex = BLOGS.findIndex((b) => b.slug === blog.slug);
+  const issueIndex = all.findIndex((b) => b.slug === blog.slug);
   const entryNo = issueIndex >= 0 ? issueIndex + 1 : 0;
-  const totalEntries = BLOGS.length;
+  const totalEntries = all.length;
 
   // Next / Previous entry — for the colophon nav at end of article.
-  const prevEntry = issueIndex > 0 ? BLOGS[issueIndex - 1] : null;
-  const nextEntry = issueIndex >= 0 && issueIndex < BLOGS.length - 1 ? BLOGS[issueIndex + 1] : null;
+  const prevEntry = issueIndex > 0 ? all[issueIndex - 1] : null;
+  const nextEntry = issueIndex >= 0 && issueIndex < all.length - 1 ? all[issueIndex + 1] : null;
 
   const breadcrumb = breadcrumbSchema([
     { name: "Home", url: SITE.url },
@@ -169,6 +169,7 @@ export function BlogPage({ blog, related }: Props) {
 
             <ArticleBody
               slug={blog.slug}
+              html={blog.html}
               folder="blog"
               inlinePhotoUrl={inlinePhoto}
               inlinePhotoCaption={inlineCaption}
@@ -332,7 +333,7 @@ export function BlogPage({ blog, related }: Props) {
             </h2>
             <div className="grid md:grid-cols-3 gap-x-8 gap-y-10">
               {related.map((b, i) => {
-                const cardHero = heroForBlog(b.slug);
+                const cardHero = b.heroImage || heroForBlog(b.slug);
                 return (
                   <Link key={b.slug} href={b.phpPath} className="group">
                     <div className="relative aspect-[4/3] overflow-hidden photo-frame mb-4">

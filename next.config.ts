@@ -1,8 +1,19 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
+import { withPayload } from "@payloadcms/next/withPayload";
+
+const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
-  turbopack: { root: __dirname },
+  turbopack: { root: dirname },
+
+  // Articles that have not been imported into the CMS are read from disk when
+  // a blog page re-renders on the server, so the files must ship with it.
+  outputFileTracingIncludes: {
+    "/blog/[slug]": ["./content/blog/**/*"],
+  },
 
   // Image optimization — pull from current gomoringa.in domain while we migrate assets locally.
   images: {
@@ -60,4 +71,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPayload(nextConfig);
